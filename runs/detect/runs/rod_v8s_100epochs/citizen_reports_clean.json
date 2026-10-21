@@ -1,0 +1,34 @@
+[
+  {
+    "id": "RD20260603215430002",
+    "timestamp": "2026-06-03T21:54:30.656301",
+    "location": "福建省莆田市城厢区荔城中大道（已获取当前位置）",
+    "reporter": "匿名",
+    "notes": "占用道路，违规挡道",
+    "objects": [
+      {
+        "class_zh": "汽车",
+        "class_en": "Car",
+        "confidence": "91%",
+        "abnormal": "车辆损坏"
+      }
+    ],
+    "status": "待审核"
+  },
+  {
+    "id": "RD20260603215320001",
+    "timestamp": "2026-06-03T21:53:20.598716",
+    "location": "福建省莆田市城厢区荔城中大道（已获取当前位置）",
+    "reporter": "匿名",
+    "notes": "井盖被翻开了",
+    "objects": [
+      {
+        "class_zh": "井盖",
+        "class_en": "Manhole",
+        "confidence": "92%",
+        "abnormal": "井盖缺失"
+      }
+    ],
+    "status": "待审核"
+  }
+]

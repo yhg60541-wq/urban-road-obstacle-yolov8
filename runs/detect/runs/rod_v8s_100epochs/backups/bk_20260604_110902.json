@@ -1,0 +1,227 @@
+{
+  "reports": [
+    {
+      "id": "RD202606041104028e2f",
+      "timestamp": "2026-06-04T11:04:02.785002",
+      "location": "福建省莆田市城厢区",
+      "reporter": "匿名",
+      "notes": "占道影响通行；存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "长椅",
+          "abnormal": "设施损坏"
+        }
+      ],
+      "status": "已整改",
+      "original_image": "G:\\runs\\detect\\runs\\rod_v8s_100epochs\\uploads\\orig_20260604110402_5b52f6.jpg",
+      "annotated_image": "G:\\runs\\detect\\runs\\rod_v8s_100epochs\\uploads\\annotated_20260604110402_37e0c0.jpg",
+      "extra_files": [],
+      "admin_feedback": "",
+      "reject_reason": "",
+      "assignee": "城厢区维修队",
+      "audit_info": {},
+      "repair": {
+        "team": "城厢区维修队",
+        "accept_time": "2026-06-04T11:07:44.105886",
+        "complete_time": "2026-06-04T11:08:15.066299",
+        "repair_photos": [],
+        "after_photos": [],
+        "repair_notes": "",
+        "repair_status": "待验收"
+      },
+      "update_time": "2026-06-04T11:08:15.066299"
+    },
+    {
+      "id": "RD20260604101453329b",
+      "timestamp": "2026-06-04T10:14:53.974784",
+      "location": "福建省莆田市城厢区",
+      "reporter": "匿名",
+      "notes": "存在安全隐患；存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "abnormal": "井盖缺失"
+        },
+        {
+          "class_zh": "井盖",
+          "abnormal": "周围塌陷"
+        }
+      ],
+      "status": "已整改",
+      "original_image": "G:\\runs\\detect\\runs\\rod_v8s_100epochs\\uploads\\orig_20260604101453_6992ec.jpg",
+      "annotated_image": "G:\\runs\\detect\\runs\\rod_v8s_100epochs\\uploads\\annotated_20260604101453_a1075c.jpg",
+      "extra_files": [],
+      "admin_feedback": "",
+      "reject_reason": "",
+      "assignee": "城厢区维修队",
+      "audit_info": {},
+      "repair": {
+        "team": "城厢区维修队",
+        "accept_time": "2026-06-04T10:19:39.027814",
+        "complete_time": "2026-06-04T10:20:01.415005",
+        "repair_photos": [],
+        "after_photos": [],
+        "repair_notes": "",
+        "repair_status": "待验收"
+      },
+      "update_time": "2026-06-04T10:20:54.705709"
+    },
+    {
+      "id": "RD202606040959373130",
+      "timestamp": "2026-06-04T09:59:37.234758",
+      "location": "福建省莆田市城厢区",
+      "reporter": "匿名",
+      "notes": "存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "abnormal": "井盖翻开"
+        }
+      ],
+      "status": "审核通过",
+      "original_image": "uploads\\orig_20260604095937_e9ce81.jpg",
+      "annotated_image": "uploads\\annotated_20260604095937_61f2f0.jpg",
+      "extra_files": [],
+      "admin_feedback": "",
+      "reject_reason": "",
+      "assignee": "",
+      "audit_info": {
+        "auditor": "管理员",
+        "audit_time": "2026-06-04T10:17:11.695933",
+        "result": "通过",
+        "note": ""
+      },
+      "repair": {
+        "team": "",
+        "accept_time": "",
+        "complete_time": "",
+        "repair_photos": [],
+        "after_photos": [],
+        "repair_notes": "",
+        "repair_status": ""
+      },
+      "update_time": "2026-06-04T10:17:11.695933"
+    },
+    {
+      "id": "RD202606040005310f4f",
+      "timestamp": "2026-06-04T00:05:31.709687",
+      "location": "福建省莆田市城厢区",
+      "reporter": "匿名",
+      "notes": "",
+      "objects": [
+        {
+          "class_zh": "汽车",
+          "abnormal": null
+        },
+        {
+          "class_zh": "汽车",
+          "abnormal": null
+        }
+      ],
+      "status": "审核通过",
+      "extra_files": [],
+      "audit_info": {
+        "auditor": "管理员",
+        "audit_time": "2026-06-04T10:17:30.737887",
+        "result": "通过",
+        "note": "图片无法显示"
+      },
+      "update_time": "2026-06-04T10:17:30.737887"
+    },
+    {
+      "id": "RD20260604000004c565",
+      "timestamp": "2026-06-04T00:00:04.593223",
+      "location": "位置未填",
+      "reporter": "匿名",
+      "notes": "积水严重",
+      "objects": [
+        {
+          "class_zh": "其他问题",
+          "abnormal": "路坏了"
+        }
+      ],
+      "status": "已整改",
+      "extra_files": [],
+      "audit_info": {
+        "auditor": "管理员",
+        "audit_time": "2026-06-04T01:05:40.773700",
+        "result": "通过",
+        "note": ""
+      },
+      "update_time": "2026-06-04T01:08:23.183122",
+      "assignee": "城厢区维修队",
+      "repair": {
+        "team": "城厢区维修队",
+        "repair_status": "待验收",
+        "accept_time": "2026-06-04T01:06:41.397945",
+        "repair_photos": [],
+        "after_photos": [],
+        "repair_notes": "",
+        "complete_time": "2026-06-04T01:07:42.005311"
+      }
+    },
+    {
+      "id": "RD20260603233753004",
+      "timestamp": "2026-06-03T23:37:53.851203",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患；存在安全隐患；存在安全隐患；视线受阻",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "confidence": "51%",
+          "abnormal": "井盖缺失"
+        }
+      ],
+      "status": "待审核"
+    },
+    {
+      "id": "RD20260603233750003",
+      "timestamp": "2026-06-03T23:37:50.036365",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患；存在安全隐患；存在安全隐患；视线受阻",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "confidence": "51%",
+          "abnormal": "井盖缺失"
+        }
+      ],
+      "status": "待审核"
+    },
+    {
+      "id": "RD20260603233713002",
+      "timestamp": "2026-06-03T23:37:13.753212",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患；存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "confidence": "95%",
+          "abnormal": "井盖缺失"
+        }
+      ],
+      "status": "已整改",
+      "update_time": "2026-06-04T00:46:34.881012"
+    },
+    {
+      "id": "RD20260603233632001",
+      "timestamp": "2026-06-03T23:36:32.903848",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "斑马线",
+          "confidence": "85%",
+          "abnormal": "斑马线模糊"
+        }
+      ],
+      "status": "待审核"
+    }
+  ],
+  "user_points": {},
+  "last_update": "2026-06-04T11:08:15.066299"
+}

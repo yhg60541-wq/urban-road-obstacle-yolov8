@@ -1,0 +1,21 @@
+{
+  "reports": [
+    {
+      "id": "RD20260603221034001",
+      "timestamp": "2026-06-03T22:10:34.111609",
+      "location": "位置未填",
+      "reporter": "匿名",
+      "notes": "斑马线太模糊",
+      "objects": [
+        {
+          "class_zh": "斑马线",
+          "class_en": "Pedestrian crosswalk",
+          "confidence": "81%",
+          "abnormal": "斑马线模糊"
+        }
+      ],
+      "status": "待审核"
+    }
+  ],
+  "user_points": {}
+}

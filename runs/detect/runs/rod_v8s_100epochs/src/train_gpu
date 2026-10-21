@@ -1,0 +1,115 @@
+cd /root/autodl-tmp/ROD-Dataset/dataset
+
+cat > train_100.py << 'EOF'
+"""
+YOLOv8s 100轮完整训练脚本
+基于ROD数据集进行障碍物检测
+"""
+
+from ultralytics import YOLO
+import torch
+import os
+
+print("=" * 70)
+print("YOLOv8s 障碍物检测模型训练 - 100轮")
+print("=" * 70)
+
+# 检查GPU
+print("\n【GPU环境检查】")
+print(f"CUDA可用: {torch.cuda.is_available()}")
+if torch.cuda.is_available():
+    print(f"GPU型号: {torch.cuda.get_device_name(0)}")
+    print(f"显存容量: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+else:
+    print("警告: 未检测到GPU，将使用CPU训练（速度很慢）")
+
+# 检查数据集
+print("\n【数据集检查】")
+train_count = len(os.listdir('train/images'))
+valid_count = len(os.listdir('valid/images'))
+print(f"训练集图片: {train_count} 张")
+print(f"验证集图片: {valid_count} 张")
+
+print("\n开始训练...")
+print("=" * 70)
+
+# 加载预训练模型（从0开始）
+# 如果想从10轮结果继续，取消下面一行的注释
+# model = YOLO('./runs/rod_v8s_10epochs/weights/best.pt')
+model = YOLO('yolov8s.pt')
+
+# 训练参数配置
+results = model.train(
+    # ========== 基础参数 ==========
+    data='data.yaml',           # 数据集配置文件
+    epochs=100,                 # 训练轮数
+    imgsz=640,                  # 输入图像尺寸
+    batch=32,                   # 批次大小（RTX 4090用32）
+    device=0,                   # 使用GPU（0表示第一块）
+
+    # ========== 数据加载 ==========
+    workers=4,                  # 数据加载线程数
+    cache=False,                # 是否缓存图片
+
+    # ========== 优化器参数 ==========
+    optimizer='auto',           # 自动选择优化器（AdamW）
+    lr0=0.01,                   # 初始学习率
+    lrf=0.01,                   # 最终学习率因子
+    momentum=0.937,             # SGD动量
+    weight_decay=0.0005,        # 权重衰减
+
+    # ========== 训练策略 ==========
+    patience=30,                # 30轮不提升则早停
+    warmup_epochs=3,            # 预热轮数
+    warmup_momentum=0.8,        # 预热动量
+    warmup_bias_lr=0.1,         # 预热偏置学习率
+
+    # ========== 损失权重 ==========
+    box=7.5,                    # 边框损失权重
+    cls=0.5,                    # 类别损失权重
+    dfl=1.5,                    # DFL损失权重
+
+    # ========== 数据增强 ==========
+    hsv_h=0.015,                # 色调增强
+    hsv_s=0.7,                  # 饱和度增强
+    hsv_v=0.4,                  # 明度增强
+    degrees=0.0,                # 旋转角度
+    translate=0.1,              # 平移增强
+    scale=0.5,                  # 缩放增强
+    shear=0.0,                  # 剪切增强
+    perspective=0.0,            # 透视增强
+    flipud=0.0,                 # 上下翻转
+    fliplr=0.5,                 # 左右翻转
+    mosaic=1.0,                 # Mosaic增强
+    mixup=0.0,                  # MixUp增强
+    copy_paste=0.0,             # Copy-Paste增强
+
+    # ========== 保存和日志 ==========
+    save=True,                  # 保存模型检查点
+    save_period=10,             # 每10轮保存一次
+    plots=True,                 # 生成训练图表
+    project='./runs',           # 保存目录
+    name='rod_v8s_100epochs',   # 实验名称
+    exist_ok=True,              # 允许覆盖
+    verbose=True,               # 详细输出
+
+    # ========== 其他 ==========
+    seed=42,                    # 随机种子
+    deterministic=True,         # 确定性算法
+    single_cls=False,           # 多类别检测
+    rect=False,                 # 矩形训练
+    cos_lr=True,                # 余弦退火学习率
+    label_smoothing=0.0,        # 标签平滑
+)
+
+print("\n" + "=" * 70)
+print("✅ 100轮训练完成！")
+print("=" * 70)
+print(f"📁 最佳模型: ./runs/rod_v8s_100epochs/weights/best.pt")
+print(f"📁 最后模型: ./runs/rod_v8s_100epochs/weights/last.pt")
+print(f"📊 训练曲线: ./runs/rod_v8s_100epochs/results.png")
+print(f"📊 混淆矩阵: ./runs/rod_v8s_100epochs/confusion_matrix.png")
+print("=" * 70)
+EOF
+
+echo "✅ 训练脚本创建完成！"

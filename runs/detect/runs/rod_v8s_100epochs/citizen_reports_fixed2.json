@@ -1,0 +1,45 @@
+{
+  "reports": [
+    {
+      "id": "RD20260603231613002",
+      "timestamp": "2026-06-03T23:16:13.512552",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "confidence": "97%",
+          "abnormal": "井盖缺失"
+        },
+        {
+          "class_zh": "井盖",
+          "confidence": "93%",
+          "abnormal": "井盖缺失"
+        },
+        {
+          "class_zh": "汽车",
+          "confidence": "52%",
+          "abnormal": "车辆损坏"
+        }
+      ],
+      "status": "待审核"
+    },
+    {
+      "id": "RD20260603221404001",
+      "timestamp": "2026-06-03T22:14:04.853469",
+      "location": "FujianHuangshi (经度:119.0720, 纬度:25.3779)",
+      "reporter": "匿名",
+      "notes": "存在安全隐患",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "confidence": "92%",
+          "abnormal": "井盖缺失"
+        }
+      ],
+      "status": "待审核"
+    }
+  ],
+  "user_points": {}
+}

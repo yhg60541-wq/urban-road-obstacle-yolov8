@@ -1,0 +1,22 @@
+{
+  "reports": [
+    {
+      "id": "RD20260603220535001",
+      "timestamp": "2026-06-03T22:05:35.193801",
+      "location": "位置未填",
+      "reporter": "匿名",
+      "notes": "",
+      "objects": [
+        {
+          "class_zh": "井盖",
+          "class_en": "Manhole",
+          "confidence": "92%",
+          "abnormal": "井盖缺失"
+        }
+      ],
+      "status": "待审核",
+      "score": 0
+    }
+  ],
+  "user_points": {}
+}

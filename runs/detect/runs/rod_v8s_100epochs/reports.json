@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-05-31T17:04:37.128146",
+    "location": "测试路段",
+    "reporter": "热心市民",
+    "detections": [
+      {
+        "class": "Manhole",
+        "confidence": "92.15%",
+        "alert_level": "[紧急]"
+      }
+    ],
+    "total": 1
+  },
+  {
+    "timestamp": "2026-05-31T17:03:51.092987",
+    "location": "测试路段",
+    "reporter": "热心市民",
+    "detections": [
+      {
+        "class": "Manhole",
+        "confidence": "94.13%",
+        "alert_level": "[紧急]"
+      }
+    ],
+    "total": 1
+  }
+]

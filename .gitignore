@@ -1,0 +1,58 @@
+# OS / editor junk
+__MACOSX/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+
+# Visual Studio / MSBuild build artifacts
+bin/
+obj/
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.sdf
+*.pch
+*.obj
+*.idb
+*.tlog
+*.log
+*.lastbuildstate
+*.hint
+*.pdb
+*.ipch
+*.exe
+*.dll
+
+# Large / binary weights & models
+*.pth
+*.npy
+*.pt
+*.keystore
+
+# Reports & documents (may contain personal info)
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.wps
+
+# Generated submission output
+result.txt
+CV/result.txt
+
+# Large dataset / submission materials (not bundled)
+附件/
+提交材料/
+文献/
